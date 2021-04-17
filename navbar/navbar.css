@@ -32,7 +32,6 @@ header {
   justify-self: center;
 }
 .searchBox {
-  background-color: white;
   height: 50%;
   width: 100%;
   grid-area: searchbox;
