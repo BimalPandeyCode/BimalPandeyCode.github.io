@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./navbar.css">
+        <link rel="stylesheet" href="">
+
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h3>Chamunda</h3>
+        </div>
+        <div class="searchBox">
+            <input type="search" placeholder="Type">
+        </div>
+        <div class="signin">
+            <button>SignIn</button>
+        </div>
+    </header>
+    <main>
+        <div class="div1">
+            <h1>Body1</h1><br/>
+            <h1>Body1</h1><br/>
+            <h1>Body1</h1><br/>
+            <h1>Body1</h1><br />
+            <!-- <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br />
+            <h1>Body1</h1><br /> -->
+        </div>
+        <button id="openside" onclick="oncl()">
+            Open sesame
+        </button>
+    </main>
+    <section id="AD">
+        AD
+    </section>
+    <article>
+        not a div
+    </article>
+    <footer>
+        not nepal
+    </footer>
+</body>
+<script>
+    let btn = document.getElementById("openside");
+    const oncl = ()=>{
+        if(document.getElementById('AD').style.opacity === "1"){
+            document.getElementById('AD').style.opacity = "0";
+        }else{
+            console.log("BIMAL PANDEY CLICKED")
+            document.getElementById('AD').style.opacity = '1';
+        }
+        
+    }
+</script>
+</html>
