@@ -55,6 +55,8 @@ header {
 }
 .signin {
   grid-area: signin;
+  display: grid;
+  place-items: center;
 }
 /* Main */
 
