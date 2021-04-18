@@ -6,7 +6,7 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: 90px auto auto 60px;
+  grid-template-rows: 70px auto auto 50px;
   grid-template-columns: 0.7fr 1fr 1fr 1fr;
   grid-template-areas:
     "header header header header"
@@ -25,24 +25,31 @@ header {
   grid-template-areas: "title searchbox signin";
 }
 .title {
-  color: burlywood;
+  color: black;
+  font-family: "Cedarville Cursive", cursive;
   font-size: 24px;
   grid-area: title;
   align-self: center;
   justify-self: center;
 }
 .searchBox {
-  height: 50%;
+  /* background-color: white; */
+  height: 60%;
   width: 100%;
   grid-area: searchbox;
   justify-self: center;
   align-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.searchBox input {
-  display: block;
-  margin: auto;
-  /* justify-self: center;
-  align-self: center; */
+.searchBoxInput {
+  /* display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto; */
   height: 70%;
   width: 70%;
 }
@@ -89,7 +96,7 @@ article {
 @media only screen and (max-width: 400px) {
   header {
     grid-template-columns: 1fr 0.3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     grid-template-areas:
       "title signin"
       "searchbox searchbox";
